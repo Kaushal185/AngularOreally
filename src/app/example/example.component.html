@@ -1,1 +1,6 @@
-<p>It Works for {{name}}!</p>
+<h1 *ngIf="name;else noNameBlock">It Works for {{name}}!</h1>
+<ng-template #noNameBlock>
+    <h1>You didn't passed name</h1>
+</ng-template>
+<h3 *ngIf="age">Age is: {{age}}</h3>
+<h3 *ngIf="hairColor">Hair color: {{hairColor}}</h3>
