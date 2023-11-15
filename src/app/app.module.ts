@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ExampleComponent } from './example/example.component';
 import { PeopleListComponent } from './people-list/people-list.component';
 import { CounterComponent } from './counter/counter.component';
+import { CongraMsgComponent } from './congra-msg/congra-msg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponent,
     PeopleListComponent,
-    CounterComponent
+    CounterComponent,
+    CongraMsgComponent
   ],
   imports: [
     BrowserModule,

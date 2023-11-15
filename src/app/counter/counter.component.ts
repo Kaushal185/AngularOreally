@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,EventEmitter,Input,Output} from '@angular/core';
 
 @Component({
   selector: 'app-counter',
@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent {
-  count: number = 0;
-  incrementCount(){
-    this.count += 1;
+  @Input() count:number = 0;
+  @Output() buttonClicked = new EventEmitter<void>();
+
+  onClick(): void{
+    this.buttonClicked.emit();
   }
+ 
 }

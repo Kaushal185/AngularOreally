@@ -1,3 +1,4 @@
 <!-- <app-people-list></app-people-list> -->
-<app-counter></app-counter>
+<app-congra-msg [count] = "count" [threshold]="threshold"></app-congra-msg>
+<app-counter [count] = "count" (buttonClicked)="incrementCount()"></app-counter>
 <router-outlet></router-outlet>
