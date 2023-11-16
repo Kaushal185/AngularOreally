@@ -8,7 +8,6 @@ export class AppComponent {
   constructor(){
 
   }
-  showCounterButton:boolean = true;
   title = 'my-angular-app';
  
 }

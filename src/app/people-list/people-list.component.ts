@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class PeopleListComponent {
   showList:boolean = true;
+
   people = [
     {
       name : 'John',
