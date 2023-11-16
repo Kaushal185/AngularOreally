@@ -3,3 +3,8 @@
 <h5>Urlparam = {{urlParam}}</h5>
 <h5>anotherParam = {{anotherParam}}</h5>
 <h3>Query params:</h3>
+<p *ngFor="let param of params">{{param.name}} = {{param.value}}</p>
+<!-- 
+    Url used for example of query paramter.
+    http://localhost:4200/param-example/123/444?one%20=%2013&two%20=%203&three%20=%20lkjdsf
+ -->
