@@ -8,6 +8,7 @@ import { PeopleListComponent } from './people-list/people-list.component';
 import { CounterComponent } from './counter/counter.component';
 import { CongraMsgComponent } from './congra-msg/congra-msg.component';
 import { CounterPageComponent } from './counter-page/counter-page.component';
+import { ParamExampleComponent } from './param-example/param-example.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CounterPageComponent } from './counter-page/counter-page.component';
     PeopleListComponent,
     CounterComponent,
     CongraMsgComponent,
-    CounterPageComponent
+    CounterPageComponent,
+    ParamExampleComponent
   ],
   imports: [
     BrowserModule,
