@@ -1,0 +1,3 @@
+<app-congra-msg [count] = "count" [threshold]="threshold"></app-congra-msg>
+<app-counter *ngIf="showCounterButton" [count] = "count" (buttonClicked)="incrementCount()"></app-counter>
+<button (click)="toggle()">Show/Hide</button>
