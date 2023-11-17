@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExampleComponent } from './example/example.component';
@@ -14,6 +14,9 @@ import { UserInfoFormComponent } from './user-info-form/user-info-form.component
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { UserInfoDisplayComponent } from './user-info-display/user-info-display.component';
+import { ButtonComponent } from './button/button.component';
+import { DangerButtonComponent } from './danger-button/danger-button.component';
+import { SuccessButtonComponent } from './success-button/success-button.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +30,16 @@ import { UserInfoDisplayComponent } from './user-info-display/user-info-display.
     NotFoundPageComponent,
     UserInfoFormComponent,
     NavBarComponent,
-    UserInfoDisplayComponent
+    UserInfoDisplayComponent,
+    ButtonComponent,
+    DangerButtonComponent,
+    SuccessButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
