@@ -13,6 +13,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { UserInfoDisplayComponent } from './user-info-display/user-info-display.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     ParamExampleComponent,
     NotFoundPageComponent,
     UserInfoFormComponent,
-    NavBarComponent
+    NavBarComponent,
+    UserInfoDisplayComponent
   ],
   imports: [
     BrowserModule,
