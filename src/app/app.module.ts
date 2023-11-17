@@ -12,6 +12,7 @@ import { ParamExampleComponent } from './param-example/param-example.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
 import { FormsModule } from '@angular/forms';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     CounterPageComponent,
     ParamExampleComponent,
     NotFoundPageComponent,
-    UserInfoFormComponent
+    UserInfoFormComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

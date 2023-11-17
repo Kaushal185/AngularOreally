@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:'param-example/:urlParam',component:ParamExampleComponent},
   {path:'param-example/:urlParam/:anotherParam',component:ParamExampleComponent},
   {path:'user-info-from',component:UserInfoFormComponent},
-  {path:'**',component:NotFoundPageComponent}
+  // {path:'**',component:NotFoundPageComponent},
   // {path:'counter',component:CounterComponent},
 ];
 
