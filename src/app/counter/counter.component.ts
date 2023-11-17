@@ -14,5 +14,4 @@ export class CounterComponent implements OnInit,OnDestroy {
   onClick(): void{
     this.buttonClicked.emit();
   }
- 
 }
