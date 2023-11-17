@@ -10,6 +10,8 @@ import { CongraMsgComponent } from './congra-msg/congra-msg.component';
 import { CounterPageComponent } from './counter-page/counter-page.component';
 import { ParamExampleComponent } from './param-example/param-example.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     CongraMsgComponent,
     CounterPageComponent,
     ParamExampleComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    UserInfoFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
