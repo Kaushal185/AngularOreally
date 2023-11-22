@@ -1,13 +1,13 @@
 # MyAngularApp
 # steps follow from creating angular project to deploy on cloud
 # steps
-1.create angular project => ng new [project/app name]
-2.create components => ng genereate component [component-name] or ng g c [component-name]
-3.create service => ng generate service [service-name] (mainly used for fetching data from api)
-4.run angular app on local host => ng serve -o or ng serve
-5.build angular application => ng build (application build file is created for deployment)
-6.login on netlify using github and import code with build file on netlify.
-7.provide path of angular app build file (dist/[app-name])
+1. angular project => ng new [project/app name]
+2. create components => ng genereate component [component-name] or ng g c [component-name]
+3. create service => ng generate service [service-name] (mainly used for fetching data from api)
+4. run angular app on local host => ng serve -o or ng serve
+5. build angular application => ng build (application build file is created for deployment)
+6. login on netlify using github and import code with build file on netlify.
+7. provide path of angular app build file (dist/[app-name])
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
