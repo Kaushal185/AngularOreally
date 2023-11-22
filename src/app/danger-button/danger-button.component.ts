@@ -9,7 +9,7 @@ import { ButtonComponent } from '../button/button.component';
 export class DangerButtonComponent extends ButtonComponent  {
   constructor(){
     super();
-    this.bgColor = "#ff0000";
+    this.bgColor = "#8ff0f0";
     this.text = "Danger";
   }
 }

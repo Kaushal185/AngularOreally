@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs';
 // In the service  instead of @Component here is decorator @Injectable
 // we can inject decorator in any component and it is used to communicate with servers mostly.
 @Injectable({
@@ -18,7 +19,14 @@ export class UserInfoService {
   // }
 
     loadData():Observable<any>{
-      return this.http.get<any>('http://randomuser.me/api')
+      return this.http.get<any>('http://randomuser.me/api').pipe(
+        map(data=>{
+          return data.results[0];
+        }),
+        map(userInfoRaw =>{
+          name: userInfoRaw.name.first +" "+userInfoRaw.name.last;
+        })
+      )
     }
 
 }

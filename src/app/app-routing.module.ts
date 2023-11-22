@@ -12,12 +12,13 @@ const routes: Routes = [
   {path:'counter-page',component:CounterPageComponent},
   {path:'example',component:ExampleComponent},
   {path:'people-list',component:PeopleListComponent},
-  {path:'',redirectTo:'example',pathMatch:'full'},
   {path:'param-example/:urlParam',component:ParamExampleComponent},
   {path:'param-example/:urlParam/:anotherParam',component:ParamExampleComponent},
-  {path:'user-info-from',component:UserInfoFormComponent},
   {path:'user-info-display',component:UserInfoDisplayComponent},
-  {path:'**',component:NotFoundPageComponent},
+  {path:'user-info-from',component:UserInfoFormComponent},
+  {path:'',redirectTo:'example',pathMatch:'full'},
+  {path:'**',component:NotFoundPageComponent}
+
 ];
 
 @NgModule({

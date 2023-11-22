@@ -1,7 +1,5 @@
 <p>It is working</p>
-<div *ngIf="isLoading">
-    <p>Email: {{info.Email}}</p>
-    <p>Name:{{info.dob.Gender}}/p>
-    <p>Gender:{{info.dob.Email}}</p>
-    <p>{{info.dob.age}}</p>
+<div *ngIf="!isLoading">
+ <p>Email:{{info.email}}</p>
+ <p>Name:{{info.name}}</p>
 </div>

@@ -14,10 +14,12 @@ export class UserInfoDisplayComponent implements OnInit {
   ngOnInit(): void {
     // this.userInfo.loadData();
     console
-    this.userInfo.loadData().subscribe(data =>
-        {console.log(data.results[0])
-        this.info = data.results[0]});
+    this.userInfo.loadData().subscribe(
+      userInfo =>{
+        this.info = userInfo;
+        this.isLoading = false;
+      }
+    );
     // check the output inside console
-    this.isLoading = false;
   }
 }

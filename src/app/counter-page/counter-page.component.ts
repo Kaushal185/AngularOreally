@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-counter-page',
   templateUrl: './counter-page.component.html',
-  styleUrls: ['./counter-page.component.css']
+  styleUrls: ['./counter-page.component.css'],
+  encapsulation:ViewEncapsulation.Emulated,
 })
 export class CounterPageComponent {
   count: number = 0;

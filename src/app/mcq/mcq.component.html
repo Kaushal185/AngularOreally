@@ -1,0 +1,15 @@
+<!-- mcq.component.html -->
+
+<h1>Multiple Choice Quiz</h1>
+
+<form (ngSubmit)="submitQuiz()">
+  <div *ngFor="let question of questions; let i = index">
+    <fieldset>
+      <legend>{{'Question ' + (i + 1) + ': ' + question.question}}</legend>
+      <label *ngFor="let option of question.options">
+        <!-- <input type="radio" name="q{{i}}" [(ngModel)]="userAnswers[i]" [value]="option"> {{option}} -->
+      </label>
+    </fieldset>
+  </div>
+  <button type="submit">Submit</button>
+</form>

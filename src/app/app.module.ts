@@ -17,6 +17,8 @@ import { UserInfoDisplayComponent } from './user-info-display/user-info-display.
 import { ButtonComponent } from './button/button.component';
 import { DangerButtonComponent } from './danger-button/danger-button.component';
 import { SuccessButtonComponent } from './success-button/success-button.component';
+import { McqComponent } from './mcq/mcq.component';
+// import { EventHandlingComponent } from './event-handling/event-handling.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { SuccessButtonComponent } from './success-button/success-button.componen
     UserInfoDisplayComponent,
     ButtonComponent,
     DangerButtonComponent,
-    SuccessButtonComponent
+    SuccessButtonComponent,
+    McqComponent,
+    // EventHandlingComponent,
   ],
   imports: [
     BrowserModule,
