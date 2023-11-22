@@ -1,6 +1,11 @@
 # MyAngularApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+# steps follow from creating angular project to deploy on cloud
+# steps
+1.create angular project => ng new [project/app name]
+2.create components => ng genereate component [component-name] or ng g c [component-name]
+3.create service => ng generate service [service-name] (mainly used for fetching data from api)
+4.run angular app on local host => ng serve -o or ng serve
+5.build angular application => ng build (application build file is created for deployment)
 
 ## Development server
 
@@ -18,10 +23,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Deployement 
+I deployed my angular application on netlify
+url of netlify => https://papaya-marigold-aaf1d6.netlify.app/example
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
